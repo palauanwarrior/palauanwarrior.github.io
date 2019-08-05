@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar-light .navbar-nav .nav-link {
+	font-size: 1.4em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+nav.navbar {
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    transition: color 0.3s ease;
+    color: #B4C5ED;
+}
+
+
+/*Header Section */
+
+section.intro {
+	height: 80vh; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero {
+	/*background-color: red;*/
+	width: 45vw; 
+	height: 100%;
+	min-width: 250px;
+
+	display: flex;
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    min-width: 375px;
+}
+
+.hero img {
+	width: 50%;
+	object-fit: cover;
+	min-width: 300px;
+	margin-top: 50px;
+}
+
+.headline {
+/*	background-color: blue;*/
+	margin-top: 50px;
+	/*font-size: calc(60px + 1vw);*/
+	font-size: 6vw;
+}
+
+.tagline {
+	margin-left: 20%; 
+	font-size: calc(10px + 1vw);
+	color: #6A757E;
+}
+
+/* Items Section */
+
+.card-img-bottom {
+  color: #fff;
+  height: 20rem;
+  background: url(../assets/kanai.png) center no-repeat;
+  /*background-size: contain;*/
+  background-size: 25vw;
+}
+
+section.card-item {
+/*  background: red;*/
+  /*margin: 0 auto;*/
+  /*padding: 20px;*/
+  /*overflow: hidden;*/
+  height: calc(850px - 30vw); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.card-item div.card {
+  width: 80%;
+  /*min-height: 200px;*/
+  /*background: white;*/
+  position: relative;
+  /*float: left;*/
+  padding: 20px;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+  box-shadow: 0 1px 3px rgba(black, 0.2);
+}
+ 
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1.0s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.8s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+/* Contact Section */
+
+section.contact {
+  background: rgb(235, 236, 236);
+  padding: 20px;
+  padding-top: 30px;
+  /*height: 45vh; */
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  text-align: center;
+}
+
+section.contact h1 {
+	margin-top: 20px;
+}
