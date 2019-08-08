@@ -13,7 +13,7 @@ $(document).ready( function() {
 	$(this).scrollTop(0);
 
 
-	// Into animation 
+	// Intro animation 
 	const hero = document.querySelector(".header-img");
 	const headline = document.querySelector(".headline");
 	const tagline = document.querySelector(".tagline");
