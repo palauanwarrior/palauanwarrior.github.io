@@ -50,6 +50,39 @@ $(document).ready( function() {
 		}
 	});
 
+
+  // Modal listeners
+  var modal1 = document.getElementById("modal1");
+  var modal2 = document.getElementById("modal2");
+
+  var open1 = document.getElementById("open1");
+  var open2 = document.getElementById("open2");
+
+  $(".close").on('click', function(event){
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+
+    modal1.style.display = "none"; 
+    modal2.style.display = "none"; 
+  });
+
+  open1.onclick = function() {
+    modal1.style.display = "block";
+  }
+
+  open2.onclick = function() {
+    modal2.style.display = "block";
+  }
+
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal1 || event.target == modal2) {
+      modal1.style.display = "none";
+      modal2.style.display = "none"; 
+    }
+  }
+
 });
 
 
