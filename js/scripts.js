@@ -66,17 +66,20 @@ $(document).ready( function() {
     modal2.style.display = "none"; 
   });
 
-  open1.onclick = function() {
+  open1.onclick = function(e) {
+    e.preventDefault();
     modal1.style.display = "block";
   }
 
-  open2.onclick = function() {
+  open2.onclick = function(e) {
+    e.preventDefault();
     modal2.style.display = "block";
   }
 
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
+    e.preventDefault();
     if (event.target == modal1 || event.target == modal2) {
       modal1.style.display = "none";
       modal2.style.display = "none"; 
