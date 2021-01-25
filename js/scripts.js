@@ -12,6 +12,20 @@ $(document).ready( function() {
 	// Reset viewport 
 	$(this).scrollTop(0);
 
+  // Init galleries 
+  $(document).ready(function(){
+    $('.image-holder').slick({
+      infinite:true,
+      centerMode: true,
+      variableWidth: true,
+      arrows: false,
+      dots: false,
+      speed: 500,
+      cssEase: 'linear',
+      useTransform:false,
+      autoplay: true
+    });
+  });
 
 	// Intro animation 
 	const hero = document.querySelector(".header-img");
@@ -54,9 +68,11 @@ $(document).ready( function() {
   // Modal listeners
   var modal1 = document.getElementById("modal1");
   var modal2 = document.getElementById("modal2");
+  var modal3 = document.getElementById("modal3");
 
   var open1 = document.getElementById("open1");
   var open2 = document.getElementById("open2");
+  var open3 = document.getElementById("open3");
 
   $(".close").on('click', function(event){
     event.stopPropagation();
@@ -64,6 +80,7 @@ $(document).ready( function() {
 
     modal1.style.display = "none"; 
     modal2.style.display = "none"; 
+    modal3.style.display = "none"; 
   });
 
   open1.onclick = function(e) {
@@ -76,13 +93,19 @@ $(document).ready( function() {
     modal2.style.display = "block";
   }
 
+  open3.onclick = function(e) {
+    e.preventDefault();
+    modal3.style.display = "block";
+  }
+
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    e.preventDefault();
-    if (event.target == modal1 || event.target == modal2) {
+    event.preventDefault();
+    if (event.target == modal1 || event.target == modal2 || event.target == modal3) {
       modal1.style.display = "none";
       modal2.style.display = "none"; 
+      modal3.style.display = "none"; 
     }
   }
 

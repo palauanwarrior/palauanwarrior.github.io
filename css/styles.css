@@ -69,18 +69,18 @@ section.intro {
 .card-img-bottom {
   color: #fff;
   height: 20rem;
-  background: url(../assets/kanai.png) center no-repeat;
+  background: url(../assets/osarch1.JPG) center no-repeat;
   /*background-size: contain;*/
   background-size: 25vw;
 }
 
-#marquesan {
-  background: url(../assets/maori.png) center no-repeat;
+#elim-img {
+  background: url(../assets/elim1.JPG) center no-repeat;
   background-size: contain; 
 } 
 
-#ula {
-  background: url(../assets/ula.jpg) center no-repeat;
+#aust-img {
+  background: url(../assets/aust3.JPG) center no-repeat;
   background-size: contain; 
 } 
 
@@ -145,9 +145,19 @@ section.card-item div.card {
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; 
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border: 1px solid #888;
   width: 80%; 
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.modal-content h5, 
+.modal-content p,
+.modal-content span {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .close {
@@ -206,6 +216,11 @@ section.contact h1 {
     transition: left 2s;
 }
 
+.image-holder img {
+  margin-left: 10px; 
+  margin-right: 10px; 
+}
+
 .slider-image
 {
     float: left;
@@ -227,12 +242,6 @@ section.contact h1 {
 #slider-image-3:target ~ .image-holder
 {
     left: -1600px;
-}
-
-.button-holder
-{
-    position: relative;
-    top: -20px;
 }
 
 .slider-change

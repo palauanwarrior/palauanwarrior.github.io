@@ -31,19 +31,10 @@
     
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" media="all" type="text/css" href="css/stylesmobile.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/mobilestyles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
     
-    <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-
-    <!-- jQuery  -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- Popper.js  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-    <!-- Bootstrap.js -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </head>
 
 
@@ -72,25 +63,48 @@
       </div>
     </nav>
 
-    <!-- Modal: -->
+    <!-- Modal Section: -->
     <div id="modal1" class="modal">
-      <div class="modal-content mt-0">
+      <div class="modal-content">
         <h5>ELIM <span class="close">&times;</span></h5>
-        <p class="card-text text-muted">$100 | Oak | 4 Week Carving Period</p>
+        <p class="card-text text-muted">Its name, “ELIM,” simply means companion. It carries the spirit of Ochaeu, the eagle ray fish and the bird which are known around Palau as natural escorts. In stormy nights the Ochaeru bird lights up the way and guides a lost traveler at sea back to safety. The eagle ray fish emits florescent light just beneath the surface of the sea, leading night travelers away from danger and back to safety.<br> The eagle ray fish is a very peaceful and gracious sea creature. But, once injured or bothered it retaliates in full and decisive force. This is the trait of a Palauan escort warrior.</p>
 
         <div class="slider-holder">
-          <span id="slider-image-1"></span>
-          <span id="slider-image-2"></span>
-          <span id="slider-image-3"></span>
           <div class="image-holder">
-              <img src="assets/maori.png" class="slider-image" width="230px" height="390px" style="margin-left: 12%;" />
-              <img src="assets/moori.jpg" class="slider-image mt-4" style="margin-left: 21%;" />
-              <img src="assets/maori2.jpg" class="slider-image" width="230px" height="390px" style="margin-left: 16%;" />
+              <div><img src="assets/warclubs.JPG"/></div>
+              <div><img src="assets/elim1.JPG" /></div>
+              <div><img src="assets/elim2.JPG" /></div>
           </div>
-          <div class="button-holder">
-              <a href="#slider-image-1" class="slider-change"></a>
-              <a href="#slider-image-2" class="slider-change"></a>
-              <a href="#slider-image-3" class="slider-change"></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h5>MEROT <span class="close">&times;</span></h5>
+        <p class="card-text text-muted">A custom carving of the Merot club.</p>
+
+        <div class="slider-holder">
+          <div class="image-holder">
+              <div><img src="assets/aust1.JPG" /></div>
+              <div><img src="assets/aust2.JPG" /></div>
+              <div><img src="assets/aust3.JPG" /></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <h5>OSARCH <span class="close">&times;</span></h5>
+        <p class="card-text text-muted">A custom carving of the Osarch club.</p>
+
+        <div class="slider-holder">
+          <div class="image-holder">
+              <div><img src="assets/osarch1.JPG" /></div>
+              <div><img src="assets/osarch2.JPG" /></div>
           </div>
         </div>
 
@@ -105,39 +119,60 @@
       </div>
     </section>
   </header>
+
   <section id="war_clubs" class="card-item" style="margin-top: 105px;">
     <div class="card">
       <div class="row">
         <div class="col-md-6">
           <div class="card-block">
+            <h4 class="card-title">MEROT</h4>
+            <p class="card-text text-muted">Custom carved Palauan War Club.</p>
+            <!-- <p class="card-text">In ancient Palau, this war club was a weapon of choice for warriors of special force who were mostly engaged in escort missions. In those days, high ranking chiefs did not travel to other villages without security escort for fear of getting beheaded along the way.<br>This weapon gained its fame after it was used by Ngirabins, Warlord of Ngriil Village, Ngerchelong State, to escort High Chief Ibedul of Koror from Idid to Nnermid, Koror.<br> -->
+            </p>
+            <p class="card-title"></p>
+            <a id="open2" class="btn btn-primary" style="color: white;">See Images</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card-img-bottom" id="aust-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-item">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card-block">
             <h4 class="card-title">ELIM</h4>
-            <p class="card-text text-muted">$100 | Oak | 4 Week Carving Period</p>
-            <p class="card-text">In ancient Palau, this war club was a weapon of choice for warriors of special force who were mostly engaged in escort missions. In those days, high ranking chiefs did not travel to other villages without security escort for fear of getting beheaded along the way.<br>This weapon gained its fame after it was used by Ngirabins, Warlord of Ngriil Village, Ngerchelong State, to escort High Chief Ibedul of Koror from Idid to Nnermid, Koror.<br>
-
-            <!-- Its name, “ELIM,” simply means companion. It carries the spirit of Ochaeu, the eagle ray fish and the bird which are known around Palau as natural escorts. In stormy nights the Ochaeru bird lights up the way and guides a lost traveler at sea back to safety. The eagle ray fish emits florescent light just beneath the surface of the sea, leading night travelers away from danger and back to safety.<br> The eagle ray fish is a very peaceful and gracious sea creature. But, once injured or bothered it retaliates in full and decisive force. This is the trait of a Palauan escort warrior.  -->
-
+            <p class="card-text text-muted">Palauan War Club</p>
+            <p class="card-text">
+              In ancient Palau, this war club was a weapon of choice for warriors of special force who were mostly engaged in escort missions. In those days, high ranking chiefs did not travel to other villages without security escort for fear of getting beheaded along the way.<br>This weapon gained its fame after it was used by Ngirabins, Warlord of Ngriil Village, Ngerchelong State, to escort High Chief Ibedul of Koror from Idid to Nnermid, Koror.<br>
             </p>
             <p class="card-title"></p>
             <a id="open1" class="btn btn-primary" style="color: white;">See Images</a>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card-img-bottom" id="marquesan">
+          <div class="card-img-bottom" id="elim-img">
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section class="card-item">
     <div class="card">
       <div class="row">
         <div class="col-md-6">
           <div class="card-block">
-            <h4 class="card-title">MARQUESAS ISLANDS WAR CLUB</h4>
-            <p class="card-text text-muted">$150 | Papaya Tree | 5 Week Carving Period</p>
-            <p class="card-text">The U’u club from the Marquesas islands is one of the holy grails for collectors of Oceanic Tribal Art. The clubs are carved from a dense hardwood. There is very little variation in the shape or form of this type of club. If it looks substantially different to the one in the photos it is probably a later and much less valuable example.</p>
-            <p class="card-text">These clubs were not just a weapon. they were a status symbol. An object that defined your status as chief. It is because it is a status symbol that so much work and superb craftsmanship is placed in a single weapon.</p>
-            <!-- <a style="color: white;" id="open2" class="btn btn-primary">See Images</a> -->
+            <h4 class="card-title">OSARCH</h4>
+            <p class="card-text text-muted">Palauan War Club</p>
+            <!-- <p class="card-text">The U’u club from the Marquesas islands is one of the holy grails for collectors of Oceanic Tribal Art. The clubs are carved from a dense hardwood. There is very little variation in the shape or form of this type of club. If it looks substantially different to the one in the photos it is probably a later and much less valuable example.</p> -->
+            <!-- <p class="card-text">These clubs were not just a weapon. they were a status symbol. An object that defined your status as chief. It is because it is a status symbol that so much work and superb craftsmanship is placed in a single weapon.</p> -->
+            <a style="color: white;" id="open3" class="btn btn-primary">See Images</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -167,8 +202,20 @@
     <br>
   </section>
 
-  <!-- <div class="slider"></div> -->
-<script type="text/javascript" src="js/scripts.js"></script>
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+
+  <!-- jQuery  -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Slick.js  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <!-- Bootstrap.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>
