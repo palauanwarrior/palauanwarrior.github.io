@@ -72,6 +72,7 @@ section.intro {
   background: url(../assets/osarch1.JPG) center no-repeat;
   /*background-size: contain;*/
   background-size: 25vw;
+  margin-top: 10px;
 }
 
 #elim-img {
@@ -81,6 +82,11 @@ section.intro {
 
 #aust-img {
   background: url(../assets/aust3.JPG) center no-repeat;
+  background-size: contain; 
+} 
+
+#osarch-img {
+  background: url(../assets/osarch1.JPG) center no-repeat;
   background-size: contain; 
 } 
 
